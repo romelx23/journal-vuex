@@ -1,0 +1,44 @@
+$theme-colors: (
+  "primary": #7b6ef0,
+  "secondary": #596ed9,
+  "success": #66a5f8,
+  "info": #1cc4de,
+  "warning": #ea9962,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+  "dark": #343a40,
+);
+
+// config scroll styles
+$scrollbar-width: 10px;
+$scrollbar-track-color: #f8f9fa;
+$scrollbar-thumb-color: #7b6ef0;
+$scrollbar-thumb-hover-color: #596ed9;
+
+::-webkit-scrollbar {
+  width: $scrollbar-width;
+}
+::-webkit-scrollbar-track {
+  background: $scrollbar-track-color;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $scrollbar-thumb-color;
+  border-radius: 10px;
+  &:hover {
+    background: $scrollbar-thumb-hover-color;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+button {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
